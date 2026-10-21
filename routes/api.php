@@ -8,7 +8,7 @@ use App\Http\Controllers\ProdukController;
 //     return $request->user();
 // })->middleware('auth:sanctum');
 
-Route::apiResource('produk', ProdukController::class);
+Route::apiResource('produk', ProdukController::class)->names('api.produk');
 
 // Route::prefix('v1')->group(function () {
 //     Route::apiResource('produk', ProdukController::class);
